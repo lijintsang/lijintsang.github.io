@@ -655,8 +655,14 @@ svg.menu-icon-house {
 .search-icon-close:hover {
   opacity: .8;
 }
-.left{text-align:left; float:left;}
-.right{text-align:right;}
+.left{
+  text-align:left; 
+  /* float:left; */
+}
+.right{
+  text-align:right;
+  display: none;
+}
 
 /* = = = = = = = = = = Theme toggle = = = = = = = = = = */
 
