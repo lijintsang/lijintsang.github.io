@@ -4,7 +4,7 @@ read_time: true
 show_date: true
 title: "this, apply, call, bind"
 date: 2024-06-14
-img: 
+img: posts/20240614/title.jpeg
 tags: [js]
 category: js
 author: Jalymg
@@ -30,6 +30,7 @@ function fn(a, b, c) {
 const args = [1, 2, 3];
 fn.apply(this, args); // 相当于调用 fn(1, 2, 3)
 ```
+
 ```jsx
 function fn(a) {
   console.log(a);
@@ -60,6 +61,7 @@ const otherObj = {
 
 obj.getValue.apply(otherObj); // 输出: 100
 ```
+
 ```jsx
 function getValue() {
   console.log(this.value);
@@ -76,6 +78,7 @@ const otherObj = {
 
 getValue(); // 在非严格模式下，输出: undefined 或者全局对象的 value
 ```
+
 ```jsx
 function example(a, b, c) {
   console.log(a, b, c);
