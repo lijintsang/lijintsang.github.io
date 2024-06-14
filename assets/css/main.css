@@ -579,6 +579,7 @@ svg {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50px;
 }
 .main-header .logo {
   width: 80%;
@@ -1035,7 +1036,7 @@ svg.menu-icon-house {
   width: 35px;
   height: 35px;
   text-align: center;
-  line-height: 35px;
+  /* line-height: 35px; */
   cursor: pointer;
   border-radius: 100px;
   color: var(--main);
