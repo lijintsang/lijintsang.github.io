@@ -12,7 +12,7 @@ night_mode = site.night_mode %}
   (function () {
     var sw = document.getElementById('theme-switch');
     var html = document.getElementsByTagName('html')[0];
-    var logo = document.getElementById('logo');
+    // var logo = document.getElementById('logo');
     var nightModeOption = ('{{ night_mode }}' || 'auto').toLowerCase();
     var storage = nightModeOption === 'manual' ? localStorage : sessionStorage;
     var themeData = loadThemeData();
@@ -36,11 +36,11 @@ night_mode = site.night_mode %}
       themeData.nightShift = nightShift;
       saveThemeData(themeData);
       html.dataset.theme = nightShift ? 'dark' : 'light';
-      if (nightShift) {
-        logo.setAttribute('src', '{{ logo_url_dark }}');
-      } else {
-        logo.setAttribute('src', '{{ logo_url }}');
-      }
+      // if (nightShift) {
+      //   logo.setAttribute('src', '{{ logo_url_dark }}');
+      // } else {
+      //   logo.setAttribute('src', '{{ logo_url }}');
+      // }
       setTimeout(function () {
         sw.checked = nightShift ? true : false;
       }, 50);
