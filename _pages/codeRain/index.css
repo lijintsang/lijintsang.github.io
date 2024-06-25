@@ -1,0 +1,14 @@
+/* index.css */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#bg {
+  background-color: black;
+  display: block; /* 防止出现滚动条 */
+  width: 100vw; /* 使 canvas 宽度填满整个浏览器窗口 */
+  height: 100vh; /* 使 canvas 高度填满整个浏览器窗口 */
+}
